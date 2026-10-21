@@ -7,61 +7,124 @@
     <meta name="author" content="donovansaez@liceovvh.cl">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
-    <title>Portafolio Donovan Sáez</title>
+    <title>Portafolio | Donovan Sáez - Fullstack Developer</title>
 </head>
 
 <body>
+    <!-- Cabecera -->
     <header class="cabecera">
-        <h1>Donovan Antoni Sáez Ross</h1>
-        <p class="header-desc">Programador freelance Fullstack Backend y Frontend.</p>
-        <div class="header-tech">
-            <span><i class="bi bi-code-slash"></i> HTML</span>
-            <span><i class="bi bi-css"></i> CSS</span>
-            <span><i class="bi bi-javascript"></i> JS</span>
-            <span><i class="bi bi-filetype-py"></i> Python</span>
-            <span><i class="bi bi-flask"></i> Flask</span>
-            <span><i class="bi bi-database"></i> SQL</span>
-            <span><i class="bi bi-shield-lock"></i> Bcrypt</span>
-        </div>
-        <div class="header-contacto">
-            <a href="mailto:donovansaez@liceovvh.cl" class="btn-contacto"><i class="bi bi-envelope"></i> Contáctame</a>
+        <!-- Contenido de la cabecera -->
+        <div class="header-contenido">
+            <img src="static/images/fotoperfil.jpg" alt="Foto de Donovan Sáez" class="foto-perfil">
+            <h1>Donovan Antoni Sáez Ross</h1>
+            <p class="header-desc">Programador Freelance Fullstack Backend y Frontend.</p>
+            <div class="header-tech">
+                <span><i class="bi bi-code-slash"></i> HTML</span>
+                <span><i class="bi bi-css"></i> CSS</span>
+                <span><i class="bi bi-javascript"></i> JS</span>
+                <span><i class="bi bi-filetype-py"></i> Python</span>
+                <span><i class="bi bi-flask"></i> Flask</span>
+                <span><i class="bi bi-database"></i> SQL</span>
+                <span><i class="bi bi-shield-lock"></i> Bcrypt</span>
+            </div>
+            <div class="header-contacto">
+                <a href="mailto:donovansaez@liceovvh.cl" class="btn-contacto"><i class="bi bi-envelope"></i> Contáctame</a>
+            </div>
         </div>
     </header>
+
+    <!-- Contenido Principal -->
     <main class="contenedor">
-        <section class="fila">
-            <h2>Proyectos trabajados</h2>
-            <ul class="proyectos-lista">
-                <li>
-                    <a href="https://github.com/DonovanSaez2025/Ejemplo_Voluntame_Donovan_S-ez_4C" class="proyectos-link">Ejemplo Voluntame</a>
-                </li>
-                <li>
-                    <a href="https://github.com/DonovanSaez2025/skillnest-certificacion-cinepedia-Donovan-Saez-4C" class="proyectos-link">Cinepedia Certificación</a>
-                </li>
-                <li>
-                    <a href="https://github.com/DonovanSaez2025/emprendimiento_prototipo_MindPleasant_Grupo_GreeMind" class="proyectos-link">MindPleasant Proyecto P-Tech</a>
-                </li>
-                <li>
-                    <a href="https://github.com/marck068/feria_tp_4c_proyecto_grupo7_EcoQuest" class="proyectos-link">EcoQuest</a>
-                </li>
-                <li>
-                    <a href="https://github.com/DonovanSaez2025/skillnest_fullstack_python_4c_donovansaez/tree/main/python" class="proyectos-link">Tareas de Skillnest</a>
-                </li>
-                <li>
-                    <a href="https://github.com/DonovanSaez2025/templo_de_los_juegos_bootstrap_parejas_DonovanSaez_KrishnaLopez_4C" class="proyectos-link">Templo de los Juegos</a>
-                </li>
-                <li>
-                    <a href="https://github.com/DonovanSaez2025/replicar_burger_king" class="proyectos-link">Replicación Burguer King</a>
-                </li>
-                <li>
-                    <a href="https://github.com/DonovanSaez2025/Discostore_saez_donovan" class="proyectos-link">Discostore</a>
-                </li>
-                <li>
-                    <a href="https://github.com/DonovanSaez2025/AlertaSilenciosa" class="proyectos-link">Alerta Silenciosa</a>
-                </li>
-            </ul>
+        <section class="seccion-proyectos">
+            <h2><i class="bi bi-folder-symlink"></i> Proyectos Destacados</h2>
+            <p class="subtitulo-seccion">Una selección de aplicaciones web, videojuegos y simulaciones fullstack.</p>
+
+            <div class="proyectos-grid">
+                <!-- Proyecto 1 -->
+                <article class="tarjeta">
+                    <div class="tarjeta-icono"><i class="bi bi-people"></i></div>
+                    <h3>VoluntaMe</h3>
+                    <p>Plataforma de gestión de voluntariado comunitario con arquitectura MVC, control de accesos y lógica estricta de backend.</p>
+                    <div class="tags"><span>Flask</span><span>MySQL</span><span>Bcrypt</span></div>
+                    <a href="https://github.com/DonovanSaez2025/Ejemplo_Voluntame_Donovan_S-ez_4C" target="_blank" class="btn-proyecto">Ver Código <i class="bi bi-github"></i></a>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="tarjeta">
+                    <div class="tarjeta-icono"><i class="bi bi-film"></i></div>
+                    <h3>Cinepedia Certificación</h3>
+                    <p>Aplicación web interactiva para la búsqueda, visualización y gestión de reseñas de películas.</p>
+                    <div class="tags"><span>Python</span><span>Flask</span><span>API</span></div>
+                    <a href="https://github.com/DonovanSaez2025/skillnest-certificacion-cinepedia-Donovan-Saez-4C" target="_blank" class="btn-proyecto">Ver Código <i class="bi bi-github"></i></a>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="tarjeta">
+                    <div class="tarjeta-icono"><i class="bi bi-brain"></i></div>
+                    <h3>MindPleasant</h3>
+                    <p>Prototipo de emprendimiento tecnológico desarrollado bajo el marco del proyecto formativo P-Tech.</p>
+                    <div class="tags"><span>Frontend</span><span>UI/UX</span><span>P-Tech</span></div>
+                    <a href="https://github.com/DonovanSaez2025/emprendimiento_prototipo_MindPleasant_Grupo_GreeMind" target="_blank" class="btn-proyecto">Ver Código <i class="bi bi-github"></i></a>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article class="tarjeta">
+                    <div class="tarjeta-icono"><i class="bi bi-tree"></i></div>
+                    <h3>EcoQuest / EcoRecicla</h3>
+                    <p>Juego educativo de aventura multijugador local con mecánicas de reciclaje en tiempo real en el parque.</p>
+                    <div class="tags"><span>JS Canvas</span><span>Flask</span><span>SQLite</span></div>
+                    <a href="https://github.com/marck068/feria_tp_4c_proyecto_grupo7_EcoQuest" target="_blank" class="btn-proyecto">Ver Código <i class="bi bi-github"></i></a>
+                </article>
+
+                <!-- Proyecto 5 -->
+                <article class="tarjeta">
+                    <div class="tarjeta-icono"><i class="bi bi-journal-code"></i></div>
+                    <h3>Tareas de Skillnest</h3>
+                    <p>Repositorio centralizado con ejercicios de fundamentos de programación, estructuras Core y bases de datos.</p>
+                    <div class="tags"><span>Fundamentos</span><span>MySQL</span><span>Python</span></div>
+                    <a href="https://github.com/DonovanSaez2025/skillnest_fullstack_python_4c_donovansaez/tree/main/python" target="_blank" class="btn-proyecto">Ver Código <i class="bi bi-github"></i></a>
+                </article>
+
+                <!-- Proyecto 6 -->
+                <article class="tarjeta">
+                    <div class="tarjeta-icono"><i class="bi bi-controller"></i></div>
+                    <h3>Templo de los Juegos</h3>
+                    <p>Sitio web para explorar, puntuar y catalogar videojuegos creado de forma colaborativa.</p>
+                    <div class="tags"><span>Bootstrap</span><span>HTML/CSS</span><span>JS</span></div>
+                    <a href="https://github.com/DonovanSaez2025/templo_de_los_juegos_bootstrap_parejas_DonovanSaez_KrishnaLopez_4C" target="_blank" class="btn-proyecto">Ver Código <i class="bi bi-github"></i></a>
+                </article>
+
+                <!-- Proyecto 7 -->
+                <article class="tarjeta">
+                    <div class="tarjeta-icono"><i class="bi bi-shop"></i></div>
+                    <h3>Replicación Burger King</h3>
+                    <p>Clon estático del sitio web de comida rápida desarrollado para pulir habilidades de maquetación y diseño.</p>
+                    <div class="tags"><span>CSS Grid</span><span>HTML5</span><span>Diseño</span></div>
+                    <a href="https://github.com/DonovanSaez2025/replicar_burger_king" target="_blank" class="btn-proyecto">Ver Código <i class="bi bi-github"></i></a>
+                </article>
+
+                <!-- Proyecto 8 -->
+                <article class="tarjeta">
+                    <div class="tarjeta-icono"><i class="bi bi-disc"></i></div>
+                    <h3>Disco Store</h3>
+                    <p>Simulacro de examen fullstack con manejo de carrito interactivo de likes, compras y filtros dinámicos.</p>
+                    <div class="tags"><span>Flexbox</span><span>JavaScript</span><span>Mockup</span></div>
+                    <a href="https://github.com/DonovanSaez2025/Discostore_saez_donovan" target="_blank" class="btn-proyecto">Ver Código <i class="bi bi-github"></i></a>
+                </article>
+
+                <!-- Proyecto 9 -->
+                <article class="tarjeta">
+                    <div class="tarjeta-icono"><i class="bi bi-bell-slash"></i></div>
+                    <h3>Alerta Silenciosa</h3>
+                    <p>Aplicación enfocada en la seguridad y envío discreto de reportes, integrada con vistas dinámicas.</p>
+                    <div class="tags"><span>Seguridad</span><span>Web App</span><span>JS</span></div>
+                    <a href="https://github.com/DonovanSaez2025/AlertaSilenciosa" target="_blank" class="btn-proyecto">Ver Código <i class="bi bi-github"></i></a>
+                </article>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="pie-pagina">
         <p>&copy; 2026 Donovan Antoni Sáez Ross. Desarrollado con HTML, CSS y Bootstrap Icons.</p>
     </footer>

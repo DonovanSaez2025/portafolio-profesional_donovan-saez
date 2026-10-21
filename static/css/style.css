@@ -1,0 +1,212 @@
+/* ==========================================================================
+   RESET & VARIABLES GLOBALES
+   ========================================================================== */
+
+:root {
+    --bg-principal: #121214;
+    --bg-tarjeta: #1e1e24;
+    --color-texto: #ffffff;
+    --color-mutado: #a0a0a9;
+    --color-acento: #6feb9b;
+    /* Verde neón suave */
+    --color-acento-hover: #52c780;
+    --fuente-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--color-texto);
+    font-family: var(--fuente-base);
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+
+/* ==========================================================================
+   HEADER / HERO SECTION
+   ========================================================================== */
+
+header {
+    background: linear-gradient(135deg, #18181c 0%, #22222a 100%);
+    border-bottom: 2px solid #2a2a35;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.header-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.header-desc {
+    font-size: 1.2rem;
+    color: var(--color-mutado);
+    margin-bottom: 24px;
+}
+
+.header-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.header-tech span {
+    background-color: rgba(111, 235, 155, 0.1);
+    border: 1px solid rgba(111, 235, 155, 0.2);
+    color: var(--color-acento);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-contacto {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: #121214;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-contacto:hover {
+    background-color: var(--color-acento-hover);
+}
+
+
+/* ==========================================================================
+   CONTENEDOR Y PROYECTOS (GRID)
+   ========================================================================== */
+
+.contenedor {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.seccion-proyectos h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subtitulo-seccion {
+    color: var(--color-mutado);
+    margin-bottom: 40px;
+}
+
+
+/* Grid Autoadaptable sin necesidad de Media Queries complejas */
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+
+/* ==========================================================================
+   TARJETAS DE PROYECTO
+   ========================================================================== */
+
+.tarjeta {
+    background-color: var(--bg-tarjeta);
+    border: 1px solid #2a2a35;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-acento);
+}
+
+.tarjeta-icono {
+    font-size: 1.8rem;
+    color: var(--color-acento);
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: var(--color-mutado);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    /* Empuja los botones hacia abajo de forma alineada */
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    background-color: #2a2a35;
+    color: #e4e4e7;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.btn-proyecto {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #3f3f46;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-proyecto:hover {
+    background-color: #2a2a35;
+    border-color: var(--color-acento);
+}
+
+
+/* ==========================================================================
+   PIE DE PÁGINA
+   ========================================================================== */
+
+.pie-pagina {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+    border-top: 1px solid #2a2a35;
+    color: var(--color-mutado);
+    font-size: 0.9rem;
+}
