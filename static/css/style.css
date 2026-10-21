@@ -1,7 +1,3 @@
-/* ==========================================================================
-   RESET & VARIABLES GLOBALES
-   ========================================================================== */
-
 :root {
     --bg-principal: #121214;
     --bg-tarjeta: #1e1e24;
@@ -26,11 +22,6 @@ body {
     line-height: 1.6;
     padding-bottom: 40px;
 }
-
-
-/* ==========================================================================
-   HEADER / HERO SECTION
-   ========================================================================== */
 
 header {
     background: linear-gradient(135deg, #18181c 0%, #22222a 100%);
@@ -90,11 +81,6 @@ header h1 {
     background-color: var(--color-acento-hover);
 }
 
-
-/* ==========================================================================
-   CONTENEDOR Y PROYECTOS (GRID)
-   ========================================================================== */
-
 .contenedor {
     max-width: 1200px;
     margin: 60px auto;
@@ -114,19 +100,11 @@ header h1 {
     margin-bottom: 40px;
 }
 
-
-/* Grid Autoadaptable sin necesidad de Media Queries complejas */
-
 .proyectos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 25px;
 }
-
-
-/* ==========================================================================
-   TARJETAS DE PROYECTO
-   ========================================================================== */
 
 .tarjeta {
     background-color: var(--bg-tarjeta);
@@ -160,7 +138,6 @@ header h1 {
     font-size: 0.95rem;
     margin-bottom: 20px;
     flex-grow: 1;
-    /* Empuja los botones hacia abajo de forma alineada */
 }
 
 .tags {
@@ -196,11 +173,6 @@ header h1 {
     background-color: #2a2a35;
     border-color: var(--color-acento);
 }
-
-
-/* ==========================================================================
-   PIE DE PÁGINA
-   ========================================================================== */
 
 .pie-pagina {
     text-align: center;
